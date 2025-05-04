@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar - Bimbel</title>
+    <link rel="stylesheet" href="daftar.css">
+    <link rel="icon" type="iamge/jpg" href="img/buku.jpg">
+</head>
+<body>
+    <section class="container">
+        <header>Formulir Pendaftaran</header>
+        <form class="form" action="#">
+            <div class="input-box">
+                <label>Nama Lengkap</label>
+                <input type="text" placeholder="Masukkan Nama Lengkap" required>
+            </div>
+            
+            <div class="input-box">
+                <label>Email</label>
+                <input type="email" placeholder="Masukkan Email" required>
+            </div>
+            
+            <div class="column">
+                <div class="input-box">
+                    <label>Nomor Telepon</label>
+                    <input type="tel" placeholder="Masukkan Nomor Telepon" required>
+                </div>
+                <div class="input-box">
+                    <label>Tanggal Lahir</label>
+                    <input type="date" required>
+                </div>
+            </div>
+            
+            <div class="gender-box">
+                <label>Jenis Kelamin</label>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="pria" name="gender" checked>
+                        <label for="pria">Pria</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="wanita" name="gender">
+                        <label for="wanita">Wanita</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="input-box address">
+                <label>Alamat Lengkap</label>
+                <input type="text" placeholder="Masukkan Alamat Lengkap" required>
+                <input type="text" placeholder="Masukkan Nama Kecamatan" required>
+                
+                <div class="column">
+                    <div class="select-box">
+                        <select required>
+                            <option value="" hidden>Pilih Kabupaten/Kota</option>
+                            <option>Pekanbaru</option>
+                            <option>Padang</option>
+                            <option>Palembang</option>
+                            <option>Batam</option>
+                            <option>Medan</option>
+                            <option>Jakarta</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="Masukkan Nama Kecamatan" required>
+                </div>
+                
+                <div class="column">
+                    <input type="text" placeholder="Masukkan Nama Kelurahan" required>
+                    <input type="text" placeholder="Masukkan Kode Pos" required>
+                </div>
+            </div>
+            
+            <button type="submit">Daftar Sekarang</button>
+        </form>
+    </section>
+</body>
+</html>

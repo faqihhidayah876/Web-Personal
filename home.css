@@ -1,0 +1,123 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(img/kelas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.344);
+    background-blend-mode: darken;
+}
+
+nav h4 {
+    font-size: 20px;
+    width: 0 20px;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+    background-color: rgba(254, 255, 255, 0.712);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    height: 70px;
+
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(255, 166, 0, 0);
+}
+nav ul li a:hover {
+    color: rgb(204, 161, 82);
+    border-bottom: 1px solid rgb(204, 161, 82);
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    text-align: left;
+    padding-left: 50px;
+    color: #ffffff;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.content div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* ...kode untuk button ... */
+
+.button {
+    display: inline-block;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #535353;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.button-text {
+    position: relative;
+    z-index: 2;
+    display: block;
+}
+
+.button-hover {
+    background-color: rgb(204, 161, 82);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: width 0.5s ease;
+}
+
+.button:hover .button-hover {
+    width: 100%;
+}
+
+.button:hover {
+    border: 2px solid transparent;
+}
